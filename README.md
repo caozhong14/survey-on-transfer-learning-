@@ -89,6 +89,7 @@ lqfarmer
 由此可以得到迁移学习的分类，以及和其他机器学习方法之间的关系图1所示。
 
 ![图1 基于定义的迁移学习分类](https://github.com/caozhong14/survey-on-transfer-learning-/blob/master/figure1.jpg)
+图1 基于定义的迁移学习分类
 
 4、基于迁移的内容分类
 获取最新消息链接：获取最新消息快速通道 - lqfarmer的博客 - 博客频道 - CSDN.NET
@@ -105,10 +106,10 @@ target domain和source domian的任务之间共享相同的模型参数（model 
 前三类迁移学习方式都要求数据（data）独立同分布假设。同时，四类迁移学习方式都要求选择的sourc doma与target domain相关，
 表1给出了迁移内容的迁移学习分类：
 
-表1 基于迁移内容的迁移学习分类
+表1 基于迁移内容的迁移学习分类(https://github.com/caozhong14/survey-on-transfer-learning-/blob/master/sheet1.jpg)
 将基于定义迁移学习分类和基于迁移内容的迁移学习分类结合，得到迁移学习分类结果如表2所示：
 
-表2 基于定义迁移学习分类和基于迁移内容的迁移学习分类结合
+表2 基于定义迁移学习分类和基于迁移内容的迁移学习分类结合(https://github.com/caozhong14/survey-on-transfer-learning-/blob/master/sheet2.jpg)
 从表2可以发现，迁移学习大多数的研究工作都集中于推导迁移学习和转导迁移学习上，无监督的迁移学习模式，在未来会吸引更多研究者关注。
 
 #### 4 迁移学习的应用
