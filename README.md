@@ -9,7 +9,7 @@ lqfarmer
 前一期介绍了表示学习Representation Learning，指出其中比较有趣的一个方向-共享表示学习。今天介绍共享表示学习最相关的机器学习领域-迁移学习（Transfer Learning）。文章内容主要整理自Sinno Jialin Pan and Qiang Yang的论文《A survey on transfer Learning》。
 获取最新消息链接：获取最新消息快速通道 - lqfarmer的博客 - 博客频道 - CSDN.NET
 
-1 迁移学习提出的背景及历史
+#### 1 迁移学习提出的背景及历史
 
 1、迁移学习提出背景
 
@@ -23,7 +23,7 @@ lqfarmer
 迁移学习的研究来源于一个观测：人类可以将以前的学到的知识应用于解决新的问题，更快的解决问题或取得更好的效果。迁移学习被赋予这样一个任务：从以前的任务当中去学习知识（knowledge）或经验，并应用于新的任务当中。换句话说，迁移学习目的是从一个或多个源任务（source tasks）中抽取知识、经验，然后应用于一个目标领域（target domain）当中去。
 自1995年以来，迁移学习吸引了众多的研究者的目光，迁移学习有很多其他名字：学习去学习（Learning to learn）、终身学习（life-long learning）、推导迁移（inductive transfer）、知识强化（knowledge consolidation）、上下文敏感性学习（context-sensitive learning）、基于知识的推导偏差（knowledge-based inductive bias）、累计/增量学习（increment / cumulative learning）等。
 
-2 迁移学习中的符号及概念的定义
+#### 2 迁移学习中的符号及概念的定义
 获取最新消息链接：获取最新消息快速通道 - lqfarmer的博客 - 博客频道 - CSDN.NET
 
 1、符号定义
@@ -38,7 +38,7 @@ lqfarmer
 1）、领域D=（X，P（x）），当源和目标领域D不同时，存在两种情况：（1）Xs不等于XT，源领域和目标领域的特征空间不同；（2）P（xs）不等于P（xt），即源空间和目标空间的特征空间相同，但观测样本X的边缘分布不同。
 2）任务T={Y，P（Y|X）}，当源和目标领域T不同时，存在两种情况：（1）Ys不等于Yt，源领域的标签空间与目标领域的标签空间不同；（2）P（Ys|Xs）不等于P（Yt|Xt），即源领域和目标领域的条件概率分布不同。
 
-3 迁移学习的分类
+#### 3 迁移学习的分类
 1、迁移学习的研究问题
 在迁移学习领域有三个研究问题：（1）、迁移什么；（2）、如何迁移；（3）、什么时候迁移。
 1）迁移什么：那一部分知识可以在多个领域或任务之间迁移，即多个领域或任务知识的共同部分，通过从源领域学习这部分共同的知识，提升目标领域任务的效果。
@@ -61,6 +61,7 @@ lqfarmer
 由此可以得到迁移学习的分类，以及和其他机器学习方法之间的关系图1所示。
 
 图1 基于定义的迁移学习分类
+
 4、基于迁移的内容分类
 获取最新消息链接：获取最新消息快速通道 - lqfarmer的博客 - 博客频道 - CSDN.NET
 根据迁移的内容，迁移学习可以分为四类：
@@ -68,6 +69,7 @@ lqfarmer
 基于特征表示的迁移学习（feature-representation transfer learning）：通过source domain学习一个好的（good）的特征表示，把知识通过特征的形式进行编码，并从suorce domain传递到target domain，提升target domain任务效果。
 基于参数的迁移学习（parameter-transfer learning）：target domain和source domian的任务之间共享相同的模型参数（model parameters）或者是服从相同的先验分布（prior distribution）。
 基于关系知识迁移学习（relational-knowledge transfer learning）：相关领域之间的知识迁移，假设source domain和target domain中，数据（data）之间联系关系是相同的。
+
 前三类迁移学习方式都要求数据（data）独立同分布假设。同时，四类迁移学习方式都要求选择的sourc doma与target domain相关，
 表1给出了迁移内容的迁移学习分类：
 
@@ -76,15 +78,25 @@ lqfarmer
 
 表2 基于定义迁移学习分类和基于迁移内容的迁移学习分类结合
 从表2可以发现，迁移学习大多数的研究工作都集中于推导迁移学习和转导迁移学习上，无监督的迁移学习模式，在未来会吸引更多研究者关注。
-4、迁移学习的应用
+
+#### 4 迁移学习的应用
 用于情感分类，图像分类，命名实体识别，WiFi信号定位，自动化设计，中文到英文翻译等问题。
 参考论文：
 [1] A survey on transfer Learning. IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING, VOL. 22, NO. 10, OCTOBER 2010
+
 [2] Learning to Learn. S. Thrun and L. Pratt, eds. Kluwer Academic Publishers, 1998.
+
 [3] R. Caruana, “Multitask Learning,” Machine Learning, vol. 28, no. 1, pp. 41-75, 1997.
+
 [4] R. Raina, A. Battle, H. Lee, B. Packer, and A.Y. Ng, “Self-Taught Learning: Transfer Learning from Unlabeled Data,” Proc. 24th Int’l Conf. Machine Learning, pp. 759-766, June 2007.
+
 [5] H. Daume´ III and D. Marcu, “Domain Adaptation for Statistical Classifiers,” J. Artificial Intelligence Research, vol. 26, pp. 101-126, 2006.
+
 [6] B. Zadrozny, “Learning and Evaluating Classifiers under Sample Selection Bias,” Proc. 21st Int’l Conf. Machine Learning, July 2004.
+
 [7] H. Shimodaira, “Improving Predictive Inference under Covariate Shift by Weighting the Log-Likelihood Function,” J. Statistical Planning and Inference, vol. 90, pp. 227-244, 2000.
+
 [8] W. Dai, Q. Yang, G. Xue, and Y. Yu, “Self-Taught Clustering,” Proc. 25th Int’l Conf. Machine Learning, pp. 200-207, July 2008.
+
 [9] Z. Wang, Y. Song, and C. Zhang, “Transferred Dimensionality Reduction,” Proc. European Conf. Machine Learning and Knowledge Discovery in Databases (ECML/PKDD ’08), pp. 550-565, Sept. 2008.
+
