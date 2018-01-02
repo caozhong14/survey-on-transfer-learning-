@@ -51,6 +51,7 @@ lqfarmer
 （1）、迁移什么；
 （2）、如何迁移；
 （3）、什么时候迁移。
+
 1）迁移什么：
 那一部分知识可以在多个领域或任务之间迁移，即多个领域或任务知识的共同部分，通过从源领域学习这部分共同的知识，提升目标领域任务的效果。
 关注迁移什么知识时，需要注意negative transfer问题：当源领域和目标领域之间没有关系，却要在之间强制迁移知识是不可能成功的。极端情况下，反倒会影响目标领域任务学习的效果，这种情况称为负迁移（negative transfer），需要尽力避免。
@@ -106,10 +107,12 @@ target domain和source domian的任务之间共享相同的模型参数（model 
 前三类迁移学习方式都要求数据（data）独立同分布假设。同时，四类迁移学习方式都要求选择的sourc doma与target domain相关，
 表1给出了迁移内容的迁移学习分类：
 
-表1 基于迁移内容的迁移学习分类(https://github.com/caozhong14/survey-on-transfer-learning-/blob/master/sheet1.jpg)
+表1 基于迁移内容的迁移学习分类
+![](https://github.com/caozhong14/survey-on-transfer-learning-/blob/master/sheet1.jpg)
 将基于定义迁移学习分类和基于迁移内容的迁移学习分类结合，得到迁移学习分类结果如表2所示：
 
-表2 基于定义迁移学习分类和基于迁移内容的迁移学习分类结合(https://github.com/caozhong14/survey-on-transfer-learning-/blob/master/sheet2.jpg)
+表2 基于定义迁移学习分类和基于迁移内容的迁移学习分类结合
+![](https://github.com/caozhong14/survey-on-transfer-learning-/blob/master/sheet2.jpg)
 从表2可以发现，迁移学习大多数的研究工作都集中于推导迁移学习和转导迁移学习上，无监督的迁移学习模式，在未来会吸引更多研究者关注。
 
 #### 4 迁移学习的应用
